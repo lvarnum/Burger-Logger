@@ -17,9 +17,9 @@ const orm = {
             cb(result);
         });
     },
-    updateOne: function (table, cols, value, id, cb) {
+    updateOne: function (table, cols, values, id, cb) {
         var query = "UPDATE ?? SET ?? = ? WHERE id = ?";
-        connection.query(query, [table, cols, value, id], (err, result) => {
+        connection.query(query, [table, cols, values, id], (err, result) => {
             if (err) throw err;
             cb(result);
         });
