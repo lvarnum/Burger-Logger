@@ -1,0 +1,62 @@
+body {
+    background-image: url("https://image.freepik.com/free-vector/wooden-wall-floor-with-aged-surface-realistic_107791-682.jpg");
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+.header {
+    background-color: darkslategray;
+    padding: 20px;
+    width: 350px;
+    margin: 0 auto;
+    color: burlywood;
+}
+
+.burger {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.burger-form {
+    background-color: burlywood;
+    padding: 10px;
+    width: 435px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.burger-name {
+    padding: 10px;
+}
+
+.submit {
+    background-color: darkslategray;
+    color: burlywood;
+    width: 100px;
+    padding: 10px;
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.burg-container {
+    background-color: darkslategray;
+    color: burlywood;
+    margin-bottom: 10px;
+    padding: 15px;
+    margin-left: 250px;
+    text-align: left;
+    white-space: nowrap;
+    overflow: auto;
+    width: 250px;
+}
+
+.devour-btn {
+    margin-left: 10px;
+    padding: 5px;
+    background-color: burlywood;
+    color: darkslategray;
+    border-radius: 5px;
+}

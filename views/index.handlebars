@@ -1,0 +1,15 @@
+<img src="http://clipart-library.com/data_images/149301.png" class='burger'>
+<h1 class='header'>Eat a Delicious Burger</h1>
+<form class='burger-form'>
+    <textarea class="burger-name" rows=6 cols=55 placeholder="Enter the name of a burger"></textarea>
+    <input class="submit" type="submit">
+</form>
+<span>
+    {{#each burgers}}
+    <div class='burg-container'>
+       -- {{burger_name}} <button class='devour-btn'>Devour</button>
+    </div>
+    {{/each}}
+</span>
+<span>
+</span>
