@@ -8,7 +8,13 @@ const router = express.Router();
 // ---------- Create Router Paths ----------
 router.get("/", (req, res) => {
     burger.selectAll(function (data) {
-        res.render("index", {burgers: data});
+        res.render("index", { burgers: data });
+    });
+});
+
+router.get("/api/burgers", (req, res) => {
+    burger.selectAll(function (data) {
+        res.json(data);
     });
 });
 
@@ -27,6 +33,13 @@ router.put("/api/burgers", (req, res) => {
 router.delete("/api/burgers", (req, res) => {
     burger.deleteOne(req.body.id, function (data) {
         res.json(data);
+    });
+});
+
+// ---------- Default Route ----------
+router.get("*", (req, res) => {
+    burger.selectAll(function (data) {
+        res.render("index", { burgers: data });
     });
 });
 
