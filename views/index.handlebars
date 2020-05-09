@@ -6,10 +6,14 @@
 </form>
 <span>
     {{#each burgers}}
-    <div class='burg-container'>
-       -- {{burger_name}} <button class='devour-btn'>Devour</button>
+    {{#if devoured}}
+    <div class='dev-container'>
+        -- {{burger_name}}
     </div>
+    {{else}}
+    <div class='burg-container'>
+        -- {{burger_name}} <button data-id="{{id}}" class='devour-btn'>Devour</button>
+    </div>
+    {{/if}}
     {{/each}}
-</span>
-<span>
 </span>

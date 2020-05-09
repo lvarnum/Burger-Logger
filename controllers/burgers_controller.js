@@ -13,7 +13,16 @@ router.get("/", (req, res) => {
 });
 
 router.post("/api/burgers", (req, res) => {
+    burger.insertOne("burger_name", req.body.burger, function (data) {
+        res.json(data);
+    });
+});
 
-})
+router.put("/api/burgers", (req, res) => {
+    burger.updateOne("devoured", true, req.body.id, function (data) {
+        res.end();
+    });
+});
+
 // ---------- Export Router ----------
 module.exports = router;

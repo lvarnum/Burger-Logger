@@ -41,16 +41,25 @@ body {
     border-radius: 10px;
 }
 
-.burg-container {
-    background-color: darkslategray;
-    color: burlywood;
+.burg-container, .dev-container {
     margin-bottom: 10px;
     padding: 15px;
-    margin-left: 250px;
     text-align: left;
     white-space: nowrap;
     overflow: auto;
     width: 250px;
+}
+
+.burg-container {
+    background-color: darkslategray;
+    color: burlywood;
+    margin-left: 250px;
+}
+
+.dev-container {
+    background-color: burlywood;
+    color: darkslategray;
+    margin-left: 950px;
 }
 
 .devour-btn {
