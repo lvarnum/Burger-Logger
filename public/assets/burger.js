@@ -14,9 +14,19 @@ $(function () {
         var id = $(this).data("id");
         $.ajax("/api/burgers", {
             type: "PUT",
-            data: { id: id }
+            data: { id: id, devoured: 1 }
         }).then(() => {
             location.reload();
         })
+    });
+
+    $(".del-btn").on("click", function () {
+        var id = $(this).data("id");
+        $.ajax("/api/burgers", {
+            type: "DELETE",
+            data: { id: id }
+        }).then(() => {
+            location.reload();
+        });
     });
 });

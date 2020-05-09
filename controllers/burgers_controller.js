@@ -19,8 +19,14 @@ router.post("/api/burgers", (req, res) => {
 });
 
 router.put("/api/burgers", (req, res) => {
-    burger.updateOne("devoured", true, req.body.id, function (data) {
+    burger.updateOne("devoured", req.body.devoured, req.body.id, function (data) {
         res.end();
+    });
+});
+
+router.delete("/api/burgers", (req, res) => {
+    burger.deleteOne(req.body.id, function (data) {
+        res.json(data);
     });
 });
 

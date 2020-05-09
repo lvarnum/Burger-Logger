@@ -44,8 +44,7 @@ body {
 .container {
     display: block;
     margin: 0 auto;
-    width: 560px;
-    padding: 10px;
+    width: 660px;
 }
 
 .burg-container, .dev-container {
@@ -54,8 +53,8 @@ body {
     text-align: left;
     white-space: nowrap;
     overflow: auto;
-    width: 250px;
-    height: 30px;
+    width: 300px;
+    height: 35px;
     float: left;
 }
 
@@ -69,10 +68,18 @@ body {
     color: darkslategray;
 }
 
-.devour-btn {
+.devour-btn, .del-btn {
     margin-left: 10px;
     padding: 5px;
+    border-radius: 5px;
+}
+
+.devour-btn {
     background-color: burlywood;
     color: darkslategray;
-    border-radius: 5px;
+}
+
+.del-btn {
+    background-color: darkslategray;
+    color: burlywood;
 }
