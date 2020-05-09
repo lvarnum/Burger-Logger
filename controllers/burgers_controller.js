@@ -20,7 +20,7 @@ router.post("/api/burgers", (req, res) => {
 
 router.put("/api/burgers", (req, res) => {
     burger.updateOne("devoured", req.body.devoured, req.body.id, function (data) {
-        res.end();
+        res.json(data);
     });
 });
 

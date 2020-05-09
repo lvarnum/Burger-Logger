@@ -68,13 +68,13 @@ body {
     color: darkslategray;
 }
 
-.devour-btn, .del-btn {
+.devour-btn, .del-btn, .enjoy-btn {
     margin-left: 10px;
     padding: 5px;
     border-radius: 5px;
 }
 
-.devour-btn {
+.devour-btn, .enjoy-btn {
     background-color: burlywood;
     color: darkslategray;
 }

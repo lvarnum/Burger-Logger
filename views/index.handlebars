@@ -1,23 +1,25 @@
 <img src="/assets/burger.png" class='burger'>
 <h1 class='header'>Eat a Delicious Burger</h1>
 <form class='burger-form'>
-    <textarea class="burger-name" rows=6 cols=55 placeholder="Enter the name of a burger"></textarea>
+    <textarea class="burger-name" rows=6 cols=55 placeholder="Enter the name of a burger worth devouring"></textarea>
     <input class="submit" type="submit">
 </form>
 <div class='container'>
     {{#each burgers}}
     {{#if devoured}}
     <div>
-        <div class='burg-container'></div>
+        <div class='burg-container'>
+            ... Nothin' but crumbs ... <button data-id="{{id}}" class='enjoy-btn'>Enjoy Again</button>
+        </div>
         <div class='dev-container'>
             -- {{burger_name}} <button data-id="{{id}}" class='del-btn'>Remove</button>
         </div>
     </div>
     {{else}}
-        <div class='burg-container'>
-            -- {{burger_name}} <button data-id="{{id}}" class='devour-btn'>Devour</button>
-        </div>
-        <div class='dev-container'></div>
+    <div class='burg-container'>
+        -- {{burger_name}} <button data-id="{{id}}" class='devour-btn'>Devour</button>
+    </div>
+    <div class='dev-container'></div>
     {{/if}}
     {{/each}}
 </div>

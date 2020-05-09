@@ -29,4 +29,14 @@ $(function () {
             location.reload();
         });
     });
+
+    $(".enjoy-btn").on("click", function () {
+        var id = $(this).data("id");
+        $.ajax("/api/burgers", {
+            type: "PUT",
+            data: { id: id, devoured: 0 }
+        }).then(() => {
+            location.reload();
+        });
+    });
 });
